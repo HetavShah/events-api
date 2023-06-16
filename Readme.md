@@ -1,8 +1,8 @@
-# Events-API (Backend)
+# Events-API (Backend-Task-01) 
 
 This repository contains various CRUD API endpoints for the events and nudge API.
 
-## API Documentation
+## Nudge API Documentation (Task-02)
 https://documenter.getpostman.com/view/19792845/2s93shyUZi#intro
 
 
