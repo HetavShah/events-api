@@ -1,15 +1,19 @@
 const express=require('express');
+const cors=require('cors');
 require('express-async-errors');
 const {eventRouter} = require('./src/events/index');
 const {nudgeRouter} = require('./src/nudges/index');
 const {connectDB}=require('./src/db/connection');
 const {errorHandler}=require('./src/middlewares/error-handler');
 const path=require('path');
+const helmet=require('helmet');
 const app= express();
 const port = process.env.PORT||3000;
 const morgan = require('morgan');
 app.use(morgan('dev'));
 app.use(express.json());
+app.use(cors());
+app.use(helmet());
 
 
 app.use('/public',express.static(path.join(__dirname, '/public')));

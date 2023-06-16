@@ -11,6 +11,7 @@ https://documenter.getpostman.com/view/19792845/2s93shyUZi#intro
 
 To get started , follow these steps:
 - Clone the repository: git clone https://github.com/HetavShah/events-api 
+- Create a 'public' directory in root 
 - Install the dependencies: `npm install`
 - Start the server: ` npm start`
 
