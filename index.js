@@ -1,6 +1,7 @@
 const express=require('express');
 require('express-async-errors');
 const {eventRouter} = require('./src/events/index');
+const {nudgeRouter} = require('./src/nudges/index');
 const {connectDB}=require('./src/db/connection');
 const {errorHandler}=require('./src/middlewares/error-handler');
 const path=require('path');
@@ -13,6 +14,7 @@ app.use(express.json());
 
 app.use('/public',express.static(path.join(__dirname, '/public')));
 app.use('/api/v3/app',eventRouter);
+app.use('/api/v3/app',nudgeRouter);
 
 app.all('*', (req, res) => {
   res.status(404).json({
