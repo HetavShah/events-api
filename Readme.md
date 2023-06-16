@@ -20,3 +20,4 @@ To get started , follow these steps:
 - Node.js and Express.js for building the API.
 - MongoDB Driver as Database driver
 - Postman for API testing and Documentation.
+- Multer for handling Image Uploads
